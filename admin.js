@@ -85,7 +85,7 @@ function addProduct() {
         return;
     }
     let quantity = Number(document.querySelector("#quantity").value);
-    let price  = formatCurrency(Number(document.querySelector("#price").value)) ;
+    let price  = Number(document.querySelector("#price").value) ;
     let image = document.querySelector("#imageUrl").value;
     let productId = getLastestId() + 1;
     let newProduct = new Product(productId, productName, quantity, price, image);
