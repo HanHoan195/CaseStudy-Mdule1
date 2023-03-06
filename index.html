@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology City</title>
+  <link rel="stylesheet" href="login.html">
+  <link rel="stylesheet" href="cart.html">
+  <link rel="stylesheet" href="admin.html">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="information.html">
+  <link rel="stylesheet" href="information.html">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="active" href="#home">TECHCITY</a>
+    <a href="#about">DEAL SHOCK</a>
+    <a href="#laptop">Máy tính xách tay</a>
+    <a href="apple">Apple Center</a>
+    <a href="#pc">Pc Market</a>
+    <a href="#linhkien">Linh kiện </a>
+    <a href="#phimchuot">Phím chuột, Gaming Gear</a>
+    <a href="#phukien">Phụ kiện công nghệ</a>   
+    <a href="#giohang"><i class='bx bx-cart' style="font-size: 25px;"></i></a>
+    <a href="login.html"><i class='bx bxs-user' style="font-size: 25px; "></i></a>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+
+
+    </div>
+  </div>
+
+  <!-- quảng cáo -->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="image/bia1.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="image/bia2.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="image/bia3.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="image/bia4.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="image/bia5.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  </div>
+
+  <!-- sản phẩm -->
+
+  <div class="product">
+    <!-- deal shock -->
+    <div>
+      <h1>SẢN PHẨM DEAL SHOCK</h1>
+    </div>
+      <div class="row" id="dealshock"></div><br><br>
+   
+
+    <!-- máy tính xách tay -->
+
+    <div>
+      <h1 id="laptop">MÁY TÍNH XÁCH TAY</h1>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="image/l1.jpg" alt="Jane" style="width:100%" id="image">
+        <div class="container">
+          <h2>LENOVO S14 Gen 3</h2>
+          <p class="title">12.990.000 đ</p>
+          <p><button class="button">Mua/Buy</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="image/ll.jpg" alt="Jane" style="width:100%" id="image"><br>
+        <div class="container">
+          <h2>MSI GF63</h2>
+          <p class="title">18.490.000 đ</p>
+          <p><button class="button">Mua/Buy</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="image/l3.jpg" alt="Jane" style="width:100%" id="image">
+        <div class="container">
+          <h2>LENOVO LEGION 5</h2>
+          <p class="title">36.990.000 đ</p>
+          <p><button class="button">Mua/Buy</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="image/l4.jpg" alt="Jane" style="width:100%" id="image">
+        <div class="container">
+          <h2>ASUS ROG STRIX</h2>
+          <p class="title">26.990.000 đ</p>
+          <p><button class="button">Mua/Buy</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="image/l5.jpg" alt="Jane" style="width:100%" id="image">
+        <div class="container">
+          <h2>ASUS VIVO BOOK</h2>
+          <p class="title">18.190.000 đ</p>
+          <p><button class="button">Mua/Buy</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="table">
+
+    <table border="0">
+
+      <th>Thông tin chung</th>
+      <th>Hỗ trợ khách hàng</th>
+      <th>TECHCity Huế</th>
+      </tr>
+      <tr>
+        <td>
+          Giới thiệu về TECH City <br>
+          Tin tuyển dụng <br>
+          Tin tức<br>
+          Tin khuyến mãi<br>
+          Liên hệ, góp ý<br>
+          Khách hàng doanh nghiệp
+        </td>
+        <td>
+          Tìm hiểu về mua trả góp <br>
+          Chính sách vận chuyển, giao hàng<br>
+          Chính sách, quy định chung<br>
+          Chính sách bảo hành<br>
+          Chính sách đổi hàng<br>
+          Bảo mật thông tin khách hàng
+        </td>
+        <td>
+          Thời gian làm việc: 07h30 - 20h30 <br>
+          Showroom 1: 152 Thừa Thiên Huế <br>
+          Tel: (0236) 3 888 000 Mobile: (84) 0903 555 310 <br>
+          Email: hue@techcity.com.vn <br>
+          Showroom 2: 52 Nguyễn Văn Linh, Thừa Thiên Huế <br>
+          Tel: (0236) 3 888 000 Mobile: (84) 0932 678 771 <br>
+          Email: hue@techcity.com.vn
+
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="admin.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

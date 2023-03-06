@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="information.html">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+
+    <div class="topnav">
+        <a class="active" href="index.html">TECHCITY</a>
+        <a href="#about">DEAL SHOCK</a>
+        <a href="#laptop">Máy tính xách tay</a>
+        <a href="apple">Apple Center</a>
+        <a href="#pc">Pc Market</a>
+        <a href="#linhkien">Linh kiện </a>
+        <a href="#phimchuot">Phím chuột, Gaming Gear</a>
+        <a href="#phukien">Phụ kiện công nghệ</a>
+        <!-- <a href="#phukien">Thiết bị mạng</a> -->
+        <a href="#giohang"><i class='bx bx-cart' style="font-size: 25px;"></i></a>
+        <a href="admin.html"><i class='bx bxs-user' style="font-size: 25px; "></i></a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="alltable">
+
+        <div id="col-4">
+            <!-- <a href=""><i class='bx bxs-spreadsheet' style="font-size: 30px; color: rgb(43, 42, 42);"></i>DANH MỤC THIẾT BỊ</a><br><br>
+            <button><i class='bx bxs-spreadsheet' style="font-size: 30px; color: rgb(43, 42, 42);"></i>DANH MỤC THIẾT BỊ</button><br> -->
+            <a href=""><i class='bx bx-laptop' style="font-size: 30px; color: rgb(43, 42, 42);"></i>Máy tính xách tay</a><br><br>
+            <a href=""><i class='bx bxl-apple' style="font-size: 30px; color: rgb(43, 42, 42);"></i>Apple Center</a><br><br>
+            <a href=""><i class='bx bx-printer' style="font-size: 30px; color: rgb(43, 42, 42);"></i>Máy in</a><br><br>
+            <a href=""><i class='bx bx-broadcast' style="font-size: 30px; color: rgb(43, 42, 42);"></i>Thiết bị
+                mạng</a><br><br>
+            <a href=""><i class='bx bx-joystick' style="font-size: 30px; color: rgb(43, 42, 42);"></i>Gear Gaming</a><br><br>
+            <a href=""><i class='bx bxs-chip' style="font-size: 30px; color: rgb(43, 42, 42);"></i>Linh kiện</a>
+
+        </div>
+
+        <div id="col-8">
+            <div class="dealshock">
+                <form action="">
+                    <div>
+                        <a href=""><i class='bx bxs-hot' style="font-size: 30px;"></a></i>
+                        <h1>DEAL SHOCK</h1>
+
+                    </div>
+                </form>
+            </div>
+
+            <!-- nhập product -->
+            <div class="container" id="col-8">
+                <div class="row">
+                    <div class="add-item">
+                        <div class="form-group">
+                            <label for="productName">
+                                <h3 style="padding: 10px; text-align: center;">Product</h3>
+                            </label>
+                            <input type="text" id="productName" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity" style="padding: 10px; text-align: center;">
+                                <h3>Quantity</h3>
+                            </label>
+                            <input type="number" id="quantity" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="price" ><h3 style="padding: 10px; text-align: center;">Price</h3></label>
+                            <input type="number" id="price" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="imageUrl"><h3 style="padding: 10px; text-align: center;">Image</h3></label>
+                            <input type="text" id="imageUrl" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for=""></label>
+                            <button class="btn btn-primary" onclick="addProduct()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- product table -->
+
+                <div class="row">
+                    <div class="show-item" >
+                        <table class="table table-hover" style="margin-left: 0;">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Product Name</th>
+                                    <th>Quantity</th>
+                                    <th>Price
+                                        <!-- <span title="Acsending" onclick="sort('asc')">&#x25B2;</span>
+                                <span title="Descending" onclick="sort('desc')">&#x25BC;</span> -->
+                                    </th>
+                                    <th>Amount</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th colspan="2" class="text-right">Total: </th>
+                                    <th id="totalAmount" class="text-right"></th>
+                                    <th></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+   
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
